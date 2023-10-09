@@ -1,6 +1,6 @@
 import React from "react";
 import Songs from "./songs.json"
-export default class Song extends React.Component {
+export default class Song extends React.Component{
     state = {
         play: false,
         index:0
