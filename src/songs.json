@@ -1,67 +1,67 @@
 {
     "songs":[
         {
-            "url":"../public/songs/Albatroz.mp3",
+            "url":"./public/Albatroz.mp3",
             "title":"I'm an Albatraoz",
             "singer":"AronChupa-Little Sis Nora",
             "imgUrl":"https://upload.wikimedia.org/wikipedia/en/d/d0/Im-an-Albatraoz.jpg"
         },
         {
-            "url":"../public/songs/Closer.mp3",
+            "url":"./public/Closer.mp3",
             "title":"Closer",
             "singer":"The Chainsmokers",
             "imgUrl":"https://i.ytimg.com/vi/25ROFXjoaAU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfi84vCy_4E3JxlASFQb7HjcPfag"
         },
         {
-            "url":"../public/songs/SteroHearts.mp3",
+            "url":"./public/SteroHearts.mp3",
             "title":"Stereo Hearts",
             "singer":"Gym Class Heroes ft. Adam Levine",
             "imgUrl":"https://i.ytimg.com/vi/T3E9Wjbq44E/hqdefault.jpg"
         },
         {
-            "url":"../public/songs/Falling.mp3",
+            "url":"./public/Falling.mp3",
             "title":"Falling",
             "singer":"Trevor Daniel",
             "imgUrl":"https://i.ytimg.com/vi/eIc4mqyN1Q8/maxresdefault.jpg"
         },
         {
-            "url":"../public/songs/Friends.mp3",
+            "url":"./public/Friends.mp3",
             "title":"Friends",
             "singer":"Anne Marie Marshmello",
             "imgUrl":"https://i.ytimg.com/vi/CY8E6N5Nzec/maxresdefault.jpg"
         },
         {
-            "url":"../public/songs/Happier.mp3",
+            "url":"./public/Happier.mp3",
             "title":"Happier",
             "singer":"Marshmello ft. Bastille",
             "imgUrl":"https://upload.wikimedia.org/wikipedia/en/e/e5/Marshmello_and_Bastille_Happier.png"
         },
         {
-            "url":"../public/songs/Here.mp3",
+            "url":"../public/Here.mp3",
             "title":"Here(Lucian Remix)",
             "singer":"Alessia Cara",
             "imgUrl":"https://upload.wikimedia.org/wikipedia/en/3/3e/Alessia_Cara_-_Here.png"
         },
         {
-            "url":"../public/songs/Mood.mp3",
+            "url":"./public/Mood.mp3",
             "title":"Mood",
             "singer":"24kGoldnn",
             "imgUrl":"https://i.ytimg.com/vi/JM4F-D-5kYs/sddefault.jpg?v=64a7b5ad"
         },
         {
-            "url":"../public/songs/OneDance.mp3",
+            "url":"../public/OneDance.mp3",
             "title":"One Dance",
             "singer":"Drake Wizkid & Kyla",
             "imgUrl":"https://i.ytimg.com/vi/QzndMMFCTg8/hqdefault.jpg"
         },
         {
-            "url":"../public/songs/Sunroof.mp3",
+            "url":"./public/Sunroof.mp3",
             "title":"Sunroof",
             "singer":"Nicky Youre, dazy",
             "imgUrl":"https://i.scdn.co/image/ab67616d0000b2732d03cfe61f9e398fa2f68c65"
         },
         {
-            "url":"../public/songs/Worried.mp3",
+            "url":"./public/Worried.mp3",
             "title":"I Ain’t Worried",
             "singer":"OneRepublic",
             "imgUrl":"https://upload.wikimedia.org/wikipedia/en/c/cf/I_Ain%27t_Worried_-_OneRepublic.jpg"
