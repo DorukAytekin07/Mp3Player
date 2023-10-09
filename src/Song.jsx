@@ -1,6 +1,7 @@
 import React from "react";
 import Songs from "./songs.json"
 export default class Song extends React.Component{
+    //yarin bunu basina mp3player ekle base ksimina bde oyle dene amk
     state = {
         play: false,
         index:0
