@@ -1,0 +1,26 @@
+.parent-div{
+  width: fit-content;
+  margin: auto auto;
+}
+.title{
+  margin-top: 20px;
+}
+.song-div{
+  margin-top: 20px;
+}
+.song-div *{
+  margin-top: 20px;
+  justify-content: center;
+}
+.song-img{
+  border-radius: 10px;
+  width: 20rem;
+  height: 20rem;
+  margin: auto auto;
+  display: block;
+}
+.buttons-div{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}

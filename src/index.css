@@ -1,0 +1,59 @@
+*{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+:root::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background-color: #2E2E2E;
+  overflow: hidden;
+}
+
+h1,p{
+  text-align: center;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+h1{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+button{
+  padding: 10px;
+}
+footer{
+  width: 100vw;
+  border-top: 5px aliceblue solid;
+  padding-bottom:50px;
+  margin-top: 50px;
+}
+footer *{
+  margin-top: 50px;
+
+}
+@media screen and (max-width: 992px) {
+  *{
+    font-size: 17px;
+  }
+  p{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  *{
+    font-size: 13px;;
+  }
+  p{
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+}
