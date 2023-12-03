@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Songs from "./songs.json"
 export default class Song extends React.Component{
-    //yarin bunu basina mp3player ekle base ksimina bde oyle dene amk 
+    //sarki bittiginde bi sonrakine gcmeyi yap
     state = {
-        play: true,
+        play: false,
         index:0
     }
     sarkilar = [];
@@ -16,26 +16,26 @@ export default class Song extends React.Component{
           this.state.play ? this.playingSong.play() : this.playingSong.pause();
         });
     }
-    playAudio(){
-        console.log("play function ici"+this.state.play)
-        this.playingSong.pause();
-        this.playingSong = new Audio(this.sarkilar[this.state.index].url)
-        this.playingSong.play()
-    }
     forward(){
         this.playingSong.pause();
         if(this.state.index == this.sarkilar.length-1){
-            console.log("buna girdi")
             this.setState({
-                index:this.state.index-10,
+                index:0,
                 play:true
             })
+            
+            this.playingSong.pause()
+            this.playingSong = new Audio(this.sarkilar[this.state.index-(this.sarkilar.length-1)].url)
+            this.playingSong.play();
         }
         else{
             this.setState({
                 index:++this.state.index,
                 play:true
             }) 
+            this.playingSong.pause()
+            this.playingSong = new Audio(this.sarkilar[this.state.index].url)
+            this.playingSong.play();
         }
         
     }
@@ -47,32 +47,44 @@ export default class Song extends React.Component{
                 index:this.sarkilar.length-1,
                 play:true
             })
+            this.playingSong.pause()
+            this.playingSong = new Audio(this.sarkilar[this.state.index+(this.sarkilar.length-1)].url)
+            this.playingSong.play();
         }
         else{
             this.setState({
                 index:--this.state.index,
                 play:true
             })
+            this.playingSong.pause()
+            this.playingSong = new Audio(this.sarkilar[this.state.index].url)
+            this.playingSong.play();
         }
     }
-    
+    startTimer = () => {    
+        setInterval(() => {
+          if (this.playingSong.ended) {
+            this.forward()
+          }
+        }, [1000]);
+      };
     render(){
-        this.state.play ? this.songState="Pause" : this.songState = "Play";
-        this.playAudio()
-        return(
-            <div className="parent-div">
-                <h1 className="title">Music Player</h1>
-                <div className="song-div">
-                    <img className="song-img" src={this.sarkilar[this.state.index].imgUrl} alt="image" />
-                    <p>{this.sarkilar[this.state.index].title}</p>
-                    <p>{this.sarkilar[this.state.index].singer}</p>
-                    <div className="buttons-div">
-                        <button onClick={this.backward.bind(this)}>Prev</button>
-                        <button onClick={this.togglePlay.bind(this)}>{this.songState}</button>
-                        <button onClick={this.forward.bind(this)}>Next</button>
+            this.startTimer()
+            this.state.play ? this.songState="Pause" : this.songState = "Play";
+            return(
+                <div className="parent-div" >
+                    <h1 className="title">Music Player</h1>
+                    <div className="song-div">
+                        <img className="song-img" src={this.sarkilar[this.state.index].imgUrl} alt="image" />
+                        <p>{this.sarkilar[this.state.index].title}</p>
+                        <p>{this.sarkilar[this.state.index].singer}</p>
+                        <div className="buttons-div">
+                            <button onClick={this.backward.bind(this)}>Prev</button>
+                            <button onClick={this.togglePlay.bind(this)}>{this.songState}</button>
+                            <button onClick={this.forward.bind(this)}>Next</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        )
+            )
     }
 }
