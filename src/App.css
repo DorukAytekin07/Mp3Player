@@ -3,19 +3,19 @@
   margin: auto auto;
 }
 .title{
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .song-div{
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .song-div *{
-  margin-top: 20px;
+  margin-top: 15px;
   justify-content: center;
 }
 .song-img{
   border-radius: 10px;
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 12rem;
   margin: auto auto;
   display: block;
 }
@@ -23,4 +23,7 @@
   display: flex;
   justify-content: space-between;
   padding: 5px;
+}
+.time-slider{
+  width: 100%;
 }
